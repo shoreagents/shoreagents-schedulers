@@ -12,7 +12,7 @@ COPY package.json ./
 COPY package-lock.json* ./
 
 # Install dependencies
-RUN npm ci --only=production
+RUN npm install --omit=dev
 
 # Copy scheduler scripts and configurations
 COPY scripts/ ./scripts/
