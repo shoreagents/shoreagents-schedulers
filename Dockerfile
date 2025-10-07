@@ -8,7 +8,7 @@ WORKDIR /app
 RUN npm install -g pm2
 
 # Copy package files
-COPY schedulers-package.json package.json
+COPY package.json ./
 COPY package-lock.json* ./
 
 # Install dependencies
